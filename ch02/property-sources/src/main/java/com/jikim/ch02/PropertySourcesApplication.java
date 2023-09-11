@@ -1,13 +1,24 @@
 package com.jikim.ch02;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class PropertySourcesApplication {
 
+	private static final Logger log = LoggerFactory.getLogger(PropertySourcesApplication.class);
+
 	public static void main(String[] args) {
-		SpringApplication.run(PropertySourcesApplication.class, args);
+		ConfigurableApplicationContext applicationContext
+			= SpringApplication.run(PropertySourcesApplication.class, args);
+
+		DbConfiguration dbConfiguration
+			= applicationContext.getBean(DbConfiguration.class);
+
+		log.info(dbConfiguration.toString());
 	}
 
 }
