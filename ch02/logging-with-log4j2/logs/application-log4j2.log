@@ -1,0 +1,19 @@
+2023-09-12 15:35:54.834 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : Starting LoggingWithLog4j2Application using Java 17.0.7 on gimjihun-ui-MacBookAir.local with PID 37790 (/Users/kimjihun/dev/Spring Boot in Practice/ch02/logging-with-log4j2/target/classes started by kimjihun in /Users/kimjihun/dev/Spring Boot in Practice/ch02/logging-with-log4j2)
+2023-09-12 15:35:54.837 [DEBUG] [           main] c.j.c.LoggingWithLog4j2Application       : Running with Spring Boot v2.6.15, Spring v5.3.27
+2023-09-12 15:35:54.837 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-12 15:35:55.133 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-12 15:35:55.133 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-09-12 15:35:55.133 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-09-12 15:35:55.167 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-09-12 15:35:55.286 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-12 15:35:55.299 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : Started LoggingWithLog4j2Application in 0.623 seconds (JVM running for 1.05)
+2023-09-12 15:53:18.817 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : Starting LoggingWithLog4j2Application using Java 17.0.7 on gimjihun-ui-MacBookAir.local with PID 39110 (/Users/kimjihun/dev/Spring Boot in Practice/ch02/logging-with-log4j2/target/classes started by kimjihun in /Users/kimjihun/dev/Spring Boot in Practice/ch02/logging-with-log4j2)
+2023-09-12 15:53:18.825 [DEBUG] [           main] c.j.c.LoggingWithLog4j2Application       : Running with Spring Boot v2.6.15, Spring v5.3.27
+2023-09-12 15:53:18.825 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : No active profile set, falling back to 1 default profile: "default"
+2023-09-12 15:53:19.111 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-12 15:53:19.111 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-09-12 15:53:19.111 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-09-12 15:53:19.146 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-09-12 15:53:19.266 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2023-09-12 15:53:19.276 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : Started LoggingWithLog4j2Application in 0.609 seconds (JVM running for 1.041)
+2023-09-12 15:53:19.277 [ INFO] [           main] c.j.c.LoggingWithLog4j2Application       : LoggingWithLog4j2Application started successfully with Log4j2 configuration
