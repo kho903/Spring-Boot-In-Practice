@@ -1,0 +1,2 @@
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+com.jikim.ch04.exception.UrlNotAccessibleFailureAnalyzer
