@@ -1,10 +1,12 @@
 package com.jikim.ch04.endpoint;
 
 import java.util.Collection;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
+import org.springframework.boot.actuate.endpoint.annotation.Selector;
 import org.springframework.stereotype.Component;
 
 import com.jikim.ch04.model.ReleaseNote;
@@ -22,5 +24,16 @@ public class ReleaseNotesEndpoint {
 	@ReadOperation
 	public Iterable<ReleaseNote> releaseNotes() {
 		return releaseNotes;
+	}
+
+	@ReadOperation
+	public Object selectCourse(@Selector String version) {
+		Optional<ReleaseNote> releaseNoteOptional = releaseNotes
+			.stream()
+			.filter(releaseNote -> version.equals(releaseNote.getVersion()))
+			.findFirst();
+		if (releaseNoteOptional.isPresent())
+			return releaseNoteOptional.get();
+		return String.format("No such release version exists : %s", version);
 	}
 }
